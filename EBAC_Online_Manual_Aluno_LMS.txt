@@ -1,0 +1,192 @@
+EBAC Online: Manual do Aluno
+Student Support
+Atualizado em 29/10/2021
+1. Orientações gerais
+1.1. Como enviar dúvida/mensagem ao tutor
+Caso queira encaminhar uma dúvida ou mensagem para um tutor de
+seu curso é só seguir esses passos:
+- Acesse a aula de “Exercício” mais próxima (dê preferência para o
+módulo relacionado à sua dúvida).
+- Na aba “Tarefa” logo abaixo do vídeo, utilize a caixa de texto para
+escrever sua dúvida/mensagem.
+- Preste atenção antes de enviar pois é necessário selecionar a opção
+“tenho uma pergunta”, como na imagem abaixo.
+
+- Após selecionar a opção de pergunta, clique em “Mandar”.
+Sua dúvida/mensagem será enviada ao primeiro tutor disponível no
+sistema, garantindo um tempo de resposta curto.
+O Fórum é um local prioritariamente para troca de ideias entre os
+colegas. Não recomendamos que poste suas dúvidas com relação ao
+curso neste local. O fórum não envia notificação de novas postagens
+nem para a equipe de suporte e nem para os tutores. Por isso, utilize-o
+como local destinado a comunicação geral e troca de ideias/
+experiências com seus colegas.
+
+1.2.
+
+Como enviar exercícios
+
+Para enviar oficialmente um exercício para avaliação, siga o seguinte
+caminho dentro do módulo:
+1. Clique na aula "Exercício".
+2. Dentro dessa aula, clique na aba "Tarefa" ao final da página.
+3. Você tem a opção de escrever um comentário ao tutor na caixa de
+texto, ou de apenas anexar seu arquivo com a tarefa (clique no ícone do
+“clip de papel” para escolher o arquivo a ser anexado).
+4. Uma vez finalizado o upload do arquivo a ser entregue, certifique-se de
+selecionar a opção “Verifique minha tarefa. Quero receber um feedback
+do tutor”, como na imagem abaixo.
+
+- Após selecionar a opção de tarefa, clique em “Mandar”.
+Atenção: A nota mínima para aprovação é de 70% em cada exercício
+proposto do curso. Isso é requisito obrigatório para receber seu
+certificado.
+É importante lembrar que você pode refazer as tarefas quantas vezes for
+necessário, não existe um limite de chances. Vale a maior nota obtida,
+independentemente do número de tentativas.
+Para enviar links como o do Dropbox ou Pinterest, você deve salvar o link
+e colá-lo na caixa de texto de entrega da tarefa.
+Para enviar mais de um arquivo, você pode anexar múltiplos arquivos à
+entrega com o limite recomendado de 100MB no total. Caso seu(s)
+arquivo(s) exceda(m) esse limite, recomendamos que faça uso de uma
+pasta compactada ou link público em algum sistema de drive online
+compartilhando o link através da caixa de texto.
+
+1.3. Como liberar as próximas aulas
+A liberação das aulas acontece de forma progressiva. Ou seja, você
+precisa assistir cada vídeo aula até o final, baixar todos os arquivos
+disponíveis, e entregar a tarefa caso se trate de uma aula de exercício
+para liberar a aula/módulo seguinte. Às vezes, por alguma instabilidade
+de conexão, o sistema não registra a conclusão da aula. Nesses casos
+você pode selecionar manualmente a opção “marcar aula como
+assistida” ao final da página. Relembrando que apesar de ter assistido a
+todas as aulas, você só receberá seu certificado do curso caso tenha
+atingido a nota mínima em todas as tarefas propostas.
+1.4. Quando são publicados novos módulos
+Novos módulos são publicados semanalmente, salvo dos cursos que já
+estão com seu conteúdo completo publicado na plataforma.
+1.5. Como funciona o suporte ao aluno
+Priorize o e-mail online@ebac.art.br para qualquer solicitação referente a
+atendimento ao aluno, reclamações, sugestões, suporte técnico e/ou
+financeiro.
+Como alternativa também oferecemos um canal de telefone e um de
+WhatsApp. (Números atualizados podem ser consultados no rodapé do
+nosso site EBAC Online).
+1.6. Como comprovar sua matrícula
+O seu e-mail de boas-vindas ao curso é a sua comprovação principal.
+Secundariamente, você pode utilizar também o comprovante de
+pagamento do curso. Esses documentos são válidos para solicitar
+descontos estudantis com a grande maioria das empresas fabricantes de
+softwares.
+Caso necessite de documentação adicional, entre em contato conosco
+pelo email online@ebac.art.br.
+1.7. Como e quando receberei o meu Certificado de Conclusão
+Após ser aprovado no curso (tendo entregue todos os exercícios
+propostos e obtido nota mínima de 70% em todos) você receberá o
+certificado por e-mail em até 15 dias úteis após a última correção.
+
+2. Navegando na plataforma de ensino
+2.1.
+
+Página inicial da plataforma
+
+Essa é a sua página inicial. Aqui você vê o dashboard com seus cursos
+adquiridos. Você também pode visualizar a lista completa dos cursos nos
+quais possui matrícula selecionando a opção “Meus cursos” no menu do
+lado esquerdo. Para acessar qualquer um deles, basta clicar no ícone
+com o nome do curso.
+2.2.
+
+Página inicial do curso
+
+Essa é a página inicial do seu curso.
+Lembrando que a porcentagem de conclusão do curso (indicada no
+canto superior direito) se refere aos módulos lançados até aquele
+momento e não necessariamente ao curso completo.
+Logo abaixo do nome do curso você vê a trilha colorida resumindo seu
+progresso no curso. A aula de onde você parou em seu último acesso
+aparecerá logo abaixo na seção “Continue da última lição”.
+
+2.3.
+
+Página de aula
+
+Ao clicar em uma aula da lista você verá essa tela.
+Os materiais de apoio podem estar anexados logo acima ou logo abaixo
+do vídeo (Neste exemplo estão logo acima).
+No canto superior direito da tela você tem a opção “Anotações”, onde
+pode registrar suas anotações pessoais sobre a aula (estas não são
+compartilhadas com tutores ou colegas).
+2.4.
+
+Fórum
+
+O Fórum está disponível aula por aula. Você pode localizar o fórum de
+cada aula arrastando a tela até abaixo do vídeo, onde verá a caixa de
+texto para fazer sua publicação.
+Caso algum colega já tenha publicado um comentário no Fórum desta
+aula, ele aparecerá logo abaixo da caixa de texto.
+Atenção: tudo que for publicado por você no fórum será visível à todos
+os alunos que possuem matrícula neste curso.
+
+2.5.
+
+Central de Ajuda
+
+Na opção “Ajuda” do menu lateral esquerdo, você consegue enviar
+uma mensagem para diferentes setores da EBAC Online.
+Para isso, clique na opção “Tipo de solicitação” e escolha uma opção
+da lista suspensa.
+Não esqueça de conferir se seu email está escrito corretamente, pois é
+através dele que você receberá um retorno.
+Escreva sua mensagem e clique em enviar.
+
+3. Fale com a gente
+Para falar com o suporte ao aluno, você pode usar os seguintes canais:
+E-mail: online@ebac.art.br
+WhatsApp e Telefone informados no rodapé de nosso site: EBAC Online
+Horário de funcionamento:
+Segunda à sexta, das 10h às 19h
+Prazo para retorno:
+Até 48hrs úteis.
+
+4. Política de Cancelamento
+Para esclarecer a nossa política de cancelamento, seguimos as diretrizes
+do Código de Defesa do Consumidor, onde define-se um prazo de 7 dias
+úteis após a matrícula para cancelamento com reembolso, troca de
+curso e cancelamento de possíveis parcelas vincendas.
+A solicitação de cancelamento do(a) ALUNO(a) só será formalizada
+mediante
+requerimento
+por
+email
+enviado
+ao
+endereço
+online@ebac.art.br. No caso de desistência do curso dentro do prazo de
+7 (sete) dias a contar da inscrição online, fará jus ao reembolso do valor
+pago, fora taxas bancárias e de comodidade, bem como ao
+cancelamento das eventuais parcelas vincendas.
+Uma vez que o prazo apresentado é expirado não há o reembolso de
+nenhum valor já pago e nem o cancelamento de parcelas a vencer, caso
+hajam. Ressaltamos que os cursos online possuem um valor único, o aluno
+apenas opta por parcelá-lo - essas parcelas não se equivalem a
+mensalidades.
+Reforçamos que a política que adotamos não foi criada pela EBAC e sim,
+é prevista no Código de Defesa do Consumidor dentro do artigo que
+discorre sobre o ''direito ao arrependimento'' e vale para qualquer
+compra feita na internet, seja de cursos online ou outros produtos.
+Art. 49. O consumidor pode desistir do contrato, no prazo de
+7 dias a contar de sua assinatura ou do ato de recebimento
+do produto ou serviço, sempre que a contratação de
+fornecimento de produtos e serviços ocorrer fora do
+estabelecimento comercial, especialmente por telefone ou
+a domicílio.
+Caso necessário, nosso contrato de prestação de serviços pode ser
+encontrado no rodapé de nosso website.
+Atenção: Em hipótese alguma será permitido o trancamento da
+matrícula do curso ora contratado, uma vez que o curso se encaixa na
+modalidade de ‘curso livre’ e possui o período de dois anos a contar da
+inscrição online.
+
+
