@@ -1,0 +1,49 @@
+
+body{
+  display:    table;
+  box-sizing: border-box;
+  }
+.align-v{
+  display:  table;
+  height:   100%;
+  }
+.align-v > * {
+  display:  table-row;
+  width:    100%;
+  }
+
+.align-h{
+  display:  table;
+  width:    100%;
+  }
+
+.align-h > * {
+  display:  table-cell;
+  height:   100%;
+  }
+
+
+.h-falign, .v-falign{
+  box-sizing: border-box;
+  display:    flex;      
+  }
+.h-falign {
+  padding:        0;
+  flex-direction: row;
+  }
+.rev-a-dir.h-falign{
+  flex-direction: row-reverse;
+}
+.v-falign {
+  padding:    0;
+  flex-direction: column;
+  }
+.rev-a-dir.align-h{
+  flex-direction: column-reverse;
+  }
+.h-falign > *{
+  margin-left:
+  }  
+.v-falign > * {
+  }
+
