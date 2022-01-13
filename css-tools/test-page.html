@@ -17,12 +17,15 @@
       >
       <header 
         class=" v-falign
-                h-section"
+                h-section-top-menu"
         >
         
         <section  
           class="v-falign bordered"
           >
+
+          <p>hdoodoo hdoo doo</p>
+          
           <section  
             class="h-falign"
             style="justify-content: space-between;"
@@ -49,9 +52,6 @@
                       I am a HEADER
                     </h1>
                 </span>
-                <p>asasdf</p>
-                <p>hdoodoo</p>
-                <p>hdoo doo</p>
             </div>
             <span class="discrete-separator">
             <div>
@@ -139,7 +139,7 @@
           </button>
 
         </div>
-        <div  class=" v-falign 
+        <article  class=" v-falign 
                       content
                       v-discrete-separator"
               style=" font-size:      .8em;
@@ -151,36 +151,28 @@
                       ">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum debitis aliquam, non dolores eos, inventore provident expedita, placeat consequatur quasi. Ipsum vitae eveniet cumque aliquam, consequuntur dignissimos accusantium ipsa?</p>
           <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa commodi quas, corrupti blanditiis ea aspernatur cum iusto est inventore odio quos itaque optio atque aperiam praesentium adipisci. Molestias, nulla vitae!</p>
-          <div>
-            <div class="discrete-separator">
-              <label  for="text1">
-                Text1: 
-              </label>
-              <input  type="text"
-                      name="text1"
-                      placeholder="text1"
-                      id="text1">
+          <section>
+            <div class="card">
+              <div class="discrete-separator">
+                <label  for="text1">
+                  Text1: 
+                </label>
+                <input  type="text"
+                        name="text1"
+                        placeholder="text1"
+                        id="text1">
+              </div>         
+              <div class="discrete-separator">
+                <label  for="text2">
+                  Text2: 
+                </label>
+                <input  type="text"
+                        name="text2"
+                        placeholder="text2"
+                        id="text2">
+              </div>            
             </div>
-            
-            <br>
-            <div class="discrete-separator">
-              <label  for="text1">
-                Text1: 
-              </label>
-              <input  type="text"
-                      name="text1"
-                      placeholder="text1"
-                      id="text1">
-            </div>            
-            <div class="discrete-separator">
-              <label  for="text2">
-                Text2: 
-              </label>
-              <input  type="text"
-                      name="text2"
-                      placeholder="text2"
-                      id="text2">
-            </div>            
+
             <div class="discrete-separator">
               <label  for="text3">
                 Text3: 
@@ -190,20 +182,23 @@
                       placeholder="text3"
                       id="text3">
             </div>
-            <textarea 
+
+            <div
+              class="card"
               style="
                 box-sizing: border-box;
                 width: 100%;
                 align-self:     stretch;
                 align-content:  left;
-                "
-              name="text-area"
-              class="discrete-separator">
-                ola a todos os cornos quem nao eh corno o que tenho a ver?
-            </textarea>
-
-          </div>
-        </div>
+                ">
+              <textarea
+                name="text-area"
+                >
+                  ola a todos os cornos quem nao eh corno o que tenho a ver?
+              </textarea>
+            </div>
+          </section>
+        </article>
       
         <div class="v-falign discrete-separator vertical">
           <button type="button">
