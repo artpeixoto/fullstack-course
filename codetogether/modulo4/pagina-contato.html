@@ -6,20 +6,20 @@
     <link 
       href="./style/simple-base.css" 
       type="text/css"    
-      rel="style">
+      rel="stylesheet">
     
     <link 
       href="./style/simple-align.css" 
       type="text/css"    
-      rel="style">
-    <link 
+      rel="stylesheet">
+    <!--<link 
       href="./style/homepage-style.css"
       type="text/css"    
-      rel="style">
+      rel="stylesheet">-->
     <link 
       href="./style/pagina-contato-style.css"
       type="text/css"    
-      rel="style">
+      rel="stylesheet">
     <meta 
       name="viewport" 
       content="width=device-width, initial-scale=1">
@@ -29,23 +29,198 @@
     </title>
 
   </head>
-  <body>
-    <header>
+  <body
+    class="v-falign">
+	<header
+      class="h-section-top-menu">
+		<h1>Artur's Stupid Webpage.</h1>
+   </header>
+   <section
+      class="h-falign">
+			<nav 
+				id="main-links-nav"
+				class="card" 
+				<h2>Explore nosso website</h2>
+				<ul>
+					<li ><details>
+						<summary>
+						<h4>
+						Exemplos de Paginas
+						</h4>
+						</summary>
 
-    </header>
-    <article>
-      <section
-        id="main-feed-section"
-        class="v-falign"
+						<ol>
+							<li><details>
+								<summary><h5>Modulo 1</h5></summary>
+								<p class="empty-menu">Parece que nao tem nada aqui. <br>Ainda....</p> <!-- Repeticao! (evitar)-->
+							</details></li>
+							<li><details>
+								<summary><h5>Modulo 2</h5></summary>
+								<p class="empty-menu">Parece que nao tem nada aqui.<br> ainda...</p>
+							</details></li>
+							<li><details>
+								<summary><h5>Modulo 3</h5></summary>
+								<ul>
+									<li><a href="00-introducao.html">Introducao</a></li>
+									<li><a href="01-listas-e-links.html">Listas e Links</a></li>
+									<li><a href="02-formatacao-de-texto.html">Formatacao de texto</a></li>
+									<li><a href="03-tabelas.html">Tabelas</a></li>
+									<li><a href="04-layouts.html">Layouts usando tabelas</a></li>
+									<li><a href="05-formularios.html">Formularios</a></li>
+								</ul>
+							</details></li>
+						</ol>
+					</details>
+					</li>
 
-      </section>
-      <section
-        id="nav#main-links-nav">
-        
-      </section>
-    </article> 
-    <footer>
+					<li>
+					<details>
+						<summary>
+						<h4>
+							Artigos
+						</h4>
+						</summary>
 
-    </footer>
+						<ul>
+							<li>
+							<a	href="">
+									<p>Sobre uma estupidez sem tamanho - A feiticeira e o forno.</p>
+							</a>
+							</li>
+
+							<li>
+								<a href="">
+									<p>Impactos ambientais das letras da Katy Perry sobre corregos de alta arenagem: Um estudo do ponto de vista matematico</p>
+								</a>
+							</li>
+
+							<li>
+							<a href="">
+							O mal das panquecas sem ketchup: Uma analise antropologica.
+							</a>
+							</li>
+						</ul>
+					</details>
+					</li>
+
+					<li>
+					<details>
+						<summary>
+						<h4>
+							Sobre
+						</h4>
+						</summary>
+
+						<ul>
+
+							<li>
+							<details>
+								<summary>
+									<h5>Sobre este site</h5>
+								</summary>
+								<div>
+									<p>
+										Este é um website. Ele n tem intencao de ser util, mas de conseguir uma boa nota. Eu acho que fui longe demais na brincadeira, ne?
+									</p>
+
+									<h5>Sobre o tema de cores: </h5>
+
+									<p>	Ele é bonito né? So tem um problema, que ele <b>NAO</b> é criação minha. Ele chama-se <b>Synthax</b>, e foi criado para o VSCode por um usuário chamado foxhoundn. Ele esta disponivel <a href="https://open-vsx.org/extension/foxhoundn/synthax">aqui</a></p>
+								</div>
+							</details>
+							</li>
+
+							<li>
+							<a href="">
+								<h5>
+								Sobre o Autor 
+								</h5>
+							</a>
+							</li>
+
+							<li>
+							<a href="">
+								<h5>Sob a mesa</h5>
+							</a>
+							</li>
+						</ul>
+					</details>
+					</li>
+
+					<li>
+					<a href="https://amazon.com.br">
+					<h4>
+						Nossa loja
+					</h4>
+					</a>
+					</li>
+
+
+					<li>
+					<a href="">
+					<h4>
+						Pelamor de deus prof me da nota boa pfv
+					</h4>
+					</a>
+					</li>
+				</ul>
+			</nav>
+
+		<article
+			class="	card"
+			id="main-feed-section">
+			<div>
+				<h1> entre em contatinho</h1>  
+				<p>Basta preencher o formulario abaixo, clicar em enviar e dar uma pirueta tipo assim <i>*piruleta*</i></p>
+         </div>
+			<form class="">
+           <div>
+            	<label
+						for="email-input">
+							Seu e-mail (por onde voce vai receber e mandar os babado)
+					</label>
+					<input
+						id="email-input"
+						type="email"
+						name="email-input">
+            </div>
+
+				<div>
+					<label
+						for="theme-input">
+							Do que vc quer falar
+					</label>
+					<input
+						id="theme-input"
+						type="text"
+						name="theme-input">
+            </div>
+				
+ 				<div>
+					<div
+						class="v-falign">
+						<label
+							for="texty-input">
+							Fale dormindo que eu te escuto em pe, meu jovem
+						</label>
+						<textarea
+							id="texty-input"
+							name="texty-input">
+						</textarea>
+						<input
+							class="v-falign"
+							type="submit"
+							alt="mande, mande sua pergunta."
+							value="submeta, submeta sua pergunta">
+					</div>
+				</div>
+         </form>
+      </article>
+	</section> 
+
+	<footer class="h-falign h-section">
+		<p>esse website foi feito por Artur Peixoto.</p>
+	</footer>
+  
   </body>
 </html>

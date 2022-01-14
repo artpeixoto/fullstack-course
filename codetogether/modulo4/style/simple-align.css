@@ -1,7 +1,8 @@
 
 body{
+  width: 100%;
+  height: 100%;
   display:    table;
-  box-sizing: border-box;
   }
 .align-v{
   display:  table;
@@ -16,34 +17,28 @@ body{
   display:  table;
   width:    100%;
   }
-
 .align-h > * {
   display:  table-cell;
   height:   100%;
   }
 
-
+/*  Alignment using css's flex  */
 .h-falign, .v-falign{
-  box-sizing: border-box;
   display:    flex;      
   }
 .h-falign {
   padding:        0;
   flex-direction: row;
   }
-.rev-a-dir.h-falign{
-  flex-direction: row-reverse;
-}
 .v-falign {
   padding:    0;
   flex-direction: column;
   }
-.rev-a-dir.align-h{
+
+/*tools to reverse the alignment direction quickly*/
+.rev-align-dir.align-h{
   flex-direction: column-reverse;
   }
-.h-falign > *{
-  margin-left:
-  }  
-.v-falign > * {
+.rev-align-dir.h-falign{
+  flex-direction: row-reverse;
   }
-
