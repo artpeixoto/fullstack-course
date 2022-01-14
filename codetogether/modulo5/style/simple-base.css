@@ -1,0 +1,77 @@
+/*This file aims to provide some basic formatting, because html's native just sucks lmao*/
+html {
+  background-color: whitesmoke;
+}
+html * {
+  font-family:      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding:          4px;
+  margin:           0px;
+  background-color: white;
+  border-collapse: collapse;
+  color:            #222222;
+  border-radius:    2px;
+  text-anchor:      middle;
+}
+
+label{
+  font-weight: bold;
+  font-size: smaller;
+  display:block;
+}
+.bordered {
+  border:           1px solid lightgray;
+}
+.shadowed, button{
+  margin:           2px;
+  box-shadow:       0.5px 0.5px 2px #808080F0;
+}
+.h-section, .h-section-top-menu{
+  border-radius:    0px;
+  box-shadow:       0px 2px 7px #808080F0;
+  margin:           -1px;
+  margin-bottom:    10px;
+  display:          block;
+  box-sizing:       border-box;
+}
+
+.h-section-top-menu{
+  width:    100%;
+  position: sticky;
+  top:      0;
+  left:     0;
+  right:    0;
+  margin: 0px 0px 0px 0px;
+  z-index: 1;
+}
+.discrete-separator, .v-discrete-separator .h-discrete-separator{
+  background-color: white; 
+  border:   1px solid lightgray;
+  margin:   10px;
+  padding:  20px;
+  display:  block;
+
+}
+.v-discrete-separator{
+  border-width:   0px 1px;
+  margin:         0px 10px;
+  border-radius:  0px;
+}
+.h-discrete-separator{
+  border-width:    1px  0px;
+  margin:          10px 0px;
+  border-radius:   0px      ;
+}
+.list-of-cards > *, .card{
+  padding:            6px;
+  border:             1px solid #bbbbbb;
+  border-radius:      6px;
+  background-color:  white;
+  box-shadow:         2px 2px 5px lightgray;
+  margin:              6px;
+}
+input, textarea, button {
+  background-color: whitesmoke;
+  border-radius: 3px;
+  border-width:  1px;
+  margin:        3px;
+}
