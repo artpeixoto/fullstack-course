@@ -5,13 +5,16 @@ html *{
    list-style: none;
    background-color:inherit;
    color: inherit;
+   border-color: coral;
 }
 body>section{
    padding: 30px;
    margin: 20px 0px;
 }
 body{
-   background-color: aquamarine;
+   background-image:url(https://miro.medium.com/max/4000/1*OYlTzp6CQCZ8Uq8eG574uA.png);
+   background-position: center;
+   background-attachment: fixed;
 }
 body > footer, body > header{
    color: #1b5692;
@@ -38,13 +41,13 @@ h2, h3, h4, h5, h6 {
 }
 */
 h1, h2, h3, h4, h5, h6 {
-   font-family: 	Impact, haettenschweiler, 'arial narrow bold', sans-serif;
+   font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 	
    display:   		inline;
    text-transform: capitalize;
    font-weight: light;
 }
 header h1{
-   font-size: 40px;
+   font-size: 70px;
 }
 p.empty-menu{
    font-style: 	oblique ;
@@ -58,12 +61,17 @@ header{
    text-transform: none;
    text-align: center;
    position: static;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
 }
 body > section {
    width: 100%;
+   background-color:   #ffa07a77;
+    
+   padding: 20px;
 }
 .card, .list-of-cards > *, .h-section, .h-section-top-menu{
-   box-shadow: 6px 6px 1px #e2624144;
+   box-shadow: 6px 6px 0px #1b569244;
 }
 .card, .list-of-cards > * {
    border-radius: 8px;
@@ -122,7 +130,7 @@ article#main-feed-section > h1 {
 
 article > div{
    margin: 0px 5px;
-   border: 0px 1px solid lightgray;
+   border: 0px 1px solid;
 }
 article#main-feed-section * {
    padding: 10px;
@@ -139,7 +147,7 @@ article#main-feed-section form > div {
    margin: 25px -10px;
    display: flex;
    flex-direction: column;
-   border: 1px solid lightgray;
+   border: 1px solid;
    border-collapse: collapse;
    border-width: 1px 0px 1px 0px;
    border-radius: 0px;
