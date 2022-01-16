@@ -1,0 +1,35 @@
+/*This file aims to provide some basic formatting, because html's native just sucks lmao*/
+html {
+}
+html * {
+  font-family:      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-collapse:  collapse;
+  color:            #222222;
+  border-radius:    2px;
+}
+
+
+
+.bordered {
+  border:           1px solid lightgray;
+}
+.shadowed{
+  margin:           2px;
+  box-shadow:       0.5px 0.5px 2px #808080F0;
+}
+.hoverable:hover{
+      
+}
+
+label{
+  font-weight: bold;
+  font-size: smaller;
+  display:block;
+}
+
+input, textarea, button {
+  background-color: whitesmoke;
+  border-radius: 4px;
+  border-width:  1px;
+  margin:        3px;
+}
