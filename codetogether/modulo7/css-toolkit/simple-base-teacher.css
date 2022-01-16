@@ -11,6 +11,7 @@
 html {
 	margin: 0;
 	padding: 0;
+	font-family: serif;
 	font-size: 62.5%; /* equivalente a 10px */
 }
 
@@ -24,6 +25,60 @@ h1 {
 
 h2 {
 	font-size: 1.8rem;
+}
+
+h1, h2, p, li {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #454545;
+}
+
+a {
+	color: #336;
+	text-decoration: none;
+}
+
+#primeiro-link > a {
+	color: #933;
+}
+
+ul {
+	font-size: 20px;
+}
+
+ul li {
+	font-size: 0.8em; /* equivalente a 16px */
+	font-size: 1.6rem; /* equivalente a 16px */
+	width: 80%;
+	height: 3rem; /* equivalente a 30px */
+}
+
+p {
+	font-size: 1.6rem; /* equivalente a 16px */
+}
+
+
+
+h2 {
+	font-size: 2rem; /* equivalente a 20px */
+	height: 3rem;
+}
+
+.navegacao {
+	
+}
+
+.navegacao li {
+	border-bottom: 1px solid #ccc;
+	display: block;
+	padding: 1rem 1rem 2rem 1rem;
+	line-height: 1.2rem;
+}
+
+.navegacao a {
+	color: #66F;
+	display: block;
+	margin-bottom: .5rem;
+	width: 100%;
 }
 
 form {
@@ -56,7 +111,7 @@ input {
 }
 
 header {
-  background-color: #333;
+  background-color: #eee;
   padding: 30px;
   text-align: center;
   font-size: 35px;

@@ -18,9 +18,29 @@ html * {
   box-shadow:       0.5px 0.5px 2px #808080F0;
 }
 .hoverable:hover{
-      
-}
 
+}
+details.dropdown {
+
+   position: relative;
+   display: inline-block
+}
+details > summary + *{
+   display:none;
+   position: absolute;
+   min-width: max-content;
+   border-radius: 2px; 
+}
+details > summary:hover ~ *,
+details > summary ~ *:hover   {
+   width: 300px;
+   padding: 10px;
+   display: block;
+   position:absolute;
+   left: 50px;
+   z-index: 2;
+   box-shadow: 8px 8px 0.5px #1b569244; 
+}
 label{
   font-weight: bold;
   font-size: smaller;
