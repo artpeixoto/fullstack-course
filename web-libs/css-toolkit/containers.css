@@ -1,6 +1,5 @@
 .h-section, .h-section-top-menu {
   border-radius: 0px;
-  box-shadow: 0px 2px 7px #808080F0;
   margin: -1px;
   margin-bottom: 10px;
   display: block;
@@ -34,5 +33,14 @@
   background-color: white;
   box-shadow: 2px 2px 5px lightgray;
   margin: 6px; }
+
+.dropdown:first-child ~ * {
+  display: none;
+  visibility: hidden; }
+.dropdown:first-child:hover ~ *, .dropdown:first-child ~ *:hover {
+  visibility: visible;
+  display: block;
+  position: relative;
+  z-index: -2; }
 
 /*# sourceMappingURL=containers.css.map */

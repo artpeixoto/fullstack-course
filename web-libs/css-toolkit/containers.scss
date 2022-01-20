@@ -36,3 +36,19 @@
   box-shadow:         2px 2px 5px lightgray;
   margin:              6px;
 }
+
+.dropdown {
+
+  &:first-child  ~ *{
+    display:       none;
+    visibility: hidden; 
+    position: relative;
+    }
+
+  &:first-child:hover ~ *, &:first-child ~ *:hover {
+    visibility: visible;
+    display:  block;
+    position: relative;
+    z-index: -2;
+    }
+  }
