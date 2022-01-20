@@ -1,51 +1,63 @@
 /*This file aims to provide some basic formatting, because html's native just sucks lmao*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 html * {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border-collapse: collapse;
   color: #222222;
-  border-radius: 2px; }
+  border-radius: 2px;
+}
 
 bordered {
-  border: 1px solid lightgray; }
+  border: 1px solid lightgray;
+}
 
 shadowed, shadowed-big {
-  box-shadow: 0.5px 0.5px 2px #888888f0; }
+  box-shadow: 0.5px 0.5px 2px #888888f0;
+}
 
 shadowed-big {
-  box-shadow: 0px 2px 10px; }
+  box-shadow: 0px 2px 10px;
+}
 
 label {
   font-weight: bold;
   font-size: smaller;
-  display: block; }
+  display: block;
+}
 
 input, textarea, button {
   background-color: whitesmoke;
   border-radius: 4px;
   border-width: 1px;
-  margin: 3px; }
+  margin: 3px;
+}
 
 @keyframes blur-animation {
   from {
-    filter: none; }
+    filter: none;
+  }
   to {
-    filter: blur(5px); } }
+    filter: blur(5px);
+  }
+}
 iframe.import {
-  all: inherit;
-  width: fit-content;
-  height: fit-content; }
+  width: max-content;
+  height: max-content;
+  overflow: hidden;
+}
 
 .hover-blur {
   animation-name: blur-animation;
-  animation-duration: 900ms;
+  animation-duration: 2s;
   animation-direction: reverse;
-  filter: blur(5px); }
+  filter: blur(5px);
+}
 
 .hover-blur:hover {
   animation-name: blur-animation;
-  animation-duration: 500ms;
+  animation-duration: 2s;
   animation-direction: normal;
-  filter: none; }
+  filter: none;
+}
 
 /*# sourceMappingURL=simple-base.css.map */

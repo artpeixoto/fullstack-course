@@ -1,3 +1,18 @@
-@use 'filesystem';
+nav.filesystem * details {
+  display: block;
+}
+nav.filesystem * details > * {
+  display: block;
+  box-sizing: border-box;
+  padding-left: 4px;
+}
+nav.filesystem * details > summary {
+  box-sizing: content-box;
+  display: list-item;
+}
+nav.filesystem * details > summary::after {
+  font-weight: bolder;
+  content: "dick ";
+}
 
 /*# sourceMappingURL=filesystem.css.map */

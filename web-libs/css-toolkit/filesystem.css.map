@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,iBAAiB",
-"sources": ["filesystem.scss"],
-"names": [],
-"file": "filesystem.css"
-}
+{"version":3,"sourceRoot":"","sources":["_filesystem-base.scss"],"names":[],"mappings":"AACE;EACE;;AACA;EACE;EACA;EACA;;AAEF;EACE;EACA;;AACA;EACI;EACA","file":"filesystem.css"}

@@ -3,7 +3,8 @@
   margin: -1px;
   margin-bottom: 10px;
   display: block;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .h-section-top-menu {
   width: 100vw;
@@ -11,20 +12,24 @@
   left: 0;
   right: 0;
   margin: 0px 0px 0px 0px;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .discrete-separator, .v-discrete-separator .h-discrete-separator {
   background-color: white;
   border: 1px solid lightgray;
-  display: block; }
+  display: block;
+}
 
 .v-discrete-separator {
   border-width: 0px 1px;
-  border-radius: 0px; }
+  border-radius: 0px;
+}
 
 .h-discrete-separator {
-  border-width: 1px  0px;
-  border-radius: 0px; }
+  border-width: 1px 0px;
+  border-radius: 0px;
+}
 
 .list-of-cards > *, .card {
   padding: 6px;
@@ -32,15 +37,32 @@
   border-radius: 6px;
   background-color: white;
   box-shadow: 2px 2px 5px lightgray;
-  margin: 6px; }
+  margin: 6px;
+}
 
-.dropdown:first-child ~ * {
-  display: none;
-  visibility: hidden; }
-.dropdown:first-child:hover ~ *, .dropdown:first-child ~ *:hover {
+details.dropdown {
+  display: flex;
+  height: auto;
+  border: 1px solid red;
+  overflow: visible;
+}
+details.dropdown summary {
+  border: 1px solid blue;
+  visibility: visible;
+  box-sizing: block;
+  position: relative;
+}
+details.dropdown summary ~ *, details.dropdown summary ~ * * {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid pink;
+}
+details.dropdown summary:hover ~ *, details.dropdown summary ~ *:hover {
   visibility: visible;
   display: block;
-  position: relative;
-  z-index: -2; }
+  z-index: 1;
+  box-sizing: border-box;
+}
 
 /*# sourceMappingURL=containers.css.map */

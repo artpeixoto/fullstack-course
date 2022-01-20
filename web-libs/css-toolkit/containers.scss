@@ -37,18 +37,30 @@
   margin:              6px;
 }
 
-.dropdown {
-
-  &:first-child  ~ *{
-    display:       none;
-    visibility: hidden; 
-    position: relative;
-    }
-
-  &:first-child:hover ~ *, &:first-child ~ *:hover {
+details.dropdown {
+  display: flex;
+  height: auto;
+  border: 1px solid red;
+  overflow: visible;
+  & summary{
+    border: 1px solid blue;
     visibility: visible;
-    display:  block;
-    position: relative;
-    z-index: -2;
-    }
+    box-sizing: block;
+    position:   relative; 
   }
+  & summary ~ * {
+    &, & *{
+    visibility:     hidden; 
+    position:       absolute;
+    z-index: 1;
+    border:         1px solid pink;
+    }
+   }
+
+  & summary:hover ~ *, & summary ~ *:hover {
+    visibility:   visible;
+    display:      block;
+    z-index: 1;
+    box-sizing:   border-box;
+  }
+}
