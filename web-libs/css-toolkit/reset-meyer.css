@@ -1,0 +1,57 @@
+/*
+Error: Invalid CSS after "0": expected expression (e.g. 1px, bold), was ";"
+        on line 19 of ./reset-meyer.css
+
+14: table, caption, tbody, tfoot, thead, tr, th, td,
+15: article, aside, canvas, details, embed,
+16: figure, figcaption, footer, header, hgroup,
+17: menu, nav, output, ruby, section, summary,
+18: time, mark, audio, video {
+19: 	margin: 0;
+20: 	padding: 0;
+21: 	border: 0;
+22: 	font-size: 100%;
+23: 	font: inherit;
+24: 	vertical-align: baseline;
+
+Backtrace:
+./reset-meyer.css:19
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1308:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/script/lexer.rb:240:in `expected!'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:897:in `assert_done'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:69:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:228:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/script.rb:27:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:1169:in `parse_script'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:745:in `parse_property'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:707:in `parse_property_or_rule'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:666:in `parse_line'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:539:in `build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:558:in `block in append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:557:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:557:in `append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:548:in `block in build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:541:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:541:in `build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:558:in `block in append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:557:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:557:in `append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:417:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:294:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:109:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:354:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:50:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:18:in `parse!'
+/usr/bin/scss:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"0\": expected expression (e.g. 1px, bold), was \";\"\A         on line 19 of ./reset-meyer.css\A \A 14: table, caption, tbody, tfoot, thead, tr, th, td,\A 15: article, aside, canvas, details, embed,\A 16: figure, figcaption, footer, header, hgroup,\A 17: menu, nav, output, ruby, section, summary,\A 18: time, mark, audio, video {\A 19: 	margin: 0;\A 20: 	padding: 0;\A 21: 	border: 0;\A 22: 	font-size: 100%;\A 23: 	font: inherit;\A 24: 	vertical-align: baseline;"; }

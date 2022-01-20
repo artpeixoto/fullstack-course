@@ -1,0 +1,18 @@
+nav.filesystem{
+  * details{
+    display:block;
+    > *{
+      display:block;
+      box-sizing:border-box;
+      padding-left: 4px;
+    }
+    > summary{ 
+      box-sizing:content-box;
+      display: list-item;
+      &::after{
+          font-weight: bolder;
+          content: "dick ";
+        }
+      }
+    }
+  }

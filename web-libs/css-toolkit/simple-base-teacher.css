@@ -1,0 +1,41 @@
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.
+        on line 108 of ./simple-base-teacher.css
+
+103: 	display: block;
+104: 	width: 100%;
+105: }
+106: 
+107: header {
+108:   background-color: #eee;
+109:   padding: 30px;
+110:   text-align: center;
+111:   font-size: 35px;
+112:   color: white;
+113: }
+
+Backtrace:
+./simple-base-teacher.css:108
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:494:in `block in tabulate'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:452:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:452:in `each_with_index'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:452:in `tabulate'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:417:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:294:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:109:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:354:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:50:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:18:in `parse!'
+/usr/bin/scss:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 108 of ./simple-base-teacher.css\A \A 103: 	display: block;\A 104: 	width: 100%;\A 105: }\A 106: \A 107: header {\A 108:   background-color: #eee;\A 109:   padding: 30px;\A 110:   text-align: center;\A 111:   font-size: 35px;\A 112:   color: white;\A 113: }"; }
