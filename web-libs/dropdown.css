@@ -1,0 +1,46 @@
+* {
+  padding: 2px 5px;
+}
+
+h1.rad, h2.rad, h3.rad, h4.rad, h5.rad, h6.rad {
+  border-radius: 2px;
+  padding: auto;
+  position: absolute;
+  background-color: lightgreen;
+  border: 1px solid green;
+  top: -34px;
+}
+
+/*	TODO: adicionar isso a biblioteca base	*/
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown .dropdown-summary {
+  width: fit-content;
+  box-sizing: border-box;
+  display: block;
+}
+.dropdown .dropdown-content {
+  visibility: hidden;
+  z-index: 2;
+  position: absolute;
+}
+.dropdown .dropdown-summary:hover ~ .dropdown-content, .dropdown .dropdown-summary ~ .dropdown-content:hover {
+  animation: cool-drop-animation 0.7s linear;
+  overflow: hidden;
+  visibility: visible;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+@keyframes cool-drop-animation {
+  from {
+    clip-path: circle(0px at 0% -50px);
+  }
+  to {
+    clip-path: circle(100rem at 0% -50px);
+  }
+}
+
+/*# sourceMappingURL=dropdown.css.map */

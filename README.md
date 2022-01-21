@@ -36,6 +36,6 @@ A pasta <code>codetogether/fonte</code> contem os arquivos usados por todos, par
 Aqui que coloco as ideias de ferramentas que me surgem durante o curso.
 
 Nenhuma delas eh bonita e provavelmente existem solucoes melhores por ai afora mas se quiser usar fica a vontade. Estou tentando usar CSS (ou SCSS) puro para faze-las rapidas. 
-
+Elas vao me servir como uma caixa de ferramentas pessoal, em resumo.
 # Porque voce fala e escreve tanta abobrinha? Vc eh idiota?
 Sim. Como adivinhou?

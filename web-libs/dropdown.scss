@@ -1,0 +1,50 @@
+*{
+		  padding: 2px 5px;
+}
+h1, h2, h3, h4, h5, h6{
+		&.rad{
+			border-radius: 2px;
+			padding: auto;
+			position: 				absolute;
+			background-color: 	lightgreen;
+			border: 				1px solid green; 
+			top: 					-34px;
+		}		
+	}
+/*	TODO: adicionar isso a biblioteca base	*/ 
+.dropdown{
+		  position: 			relative;
+		  display:				flex;
+		  flex-direction: column;
+		  
+
+		  & .dropdown-summary{
+				width: 						fit-content;
+				box-sizing: 			border-box;
+				display:					block;
+				}
+		  & .dropdown-content{
+				visibility: hidden;
+				z-index: 		2;
+				position: 	absolute;	
+				}
+
+		  & .dropdown-summary:hover ~ .dropdown-content , 
+		  & .dropdown-summary ~ .dropdown-content:hover {
+				animation: 			cool-drop-animation 0.7s linear;
+				overflow: 			hidden;
+				visibility:			visible; 
+				position: 			relative;
+				animation-fill-mode: forwards;
+				}
+		 @keyframes cool-drop-animation{
+			from {
+				clip-path: 						 circle(0px at 0% -50px);
+				}
+			to {
+				clip-path: 						 circle(100rem at 0% -50px);
+				}
+			}
+}
+		  
+
