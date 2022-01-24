@@ -1,0 +1,210 @@
+/*This file aims to provide some basic formatting, because html's native just sucks lmao*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+body {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.align-v {
+  display: table;
+  height: 100%;
+}
+
+.align-v > * {
+  display: table-row;
+  width: 100%;
+}
+
+.align-h {
+  display: table;
+  width: 100%;
+}
+
+.align-h > * {
+  display: table-cell;
+  height: 100%;
+}
+
+/*  Alignment using css's flex  */
+.h-falign, .v-falign {
+  display: flex;
+}
+
+.h-falign {
+  padding: 0;
+  flex-direction: row;
+}
+
+.v-falign {
+  padding: 0;
+  flex-direction: column;
+}
+
+/*tools to reverse the alignment direction quickly*/
+.rev-align-dir.align-h {
+  flex-direction: column-reverse;
+}
+
+.rev-align-dir.h-falign {
+  flex-direction: row-reverse;
+}
+
+html * {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-collapse: collapse;
+  color: #222222;
+  border-radius: 2px;
+}
+
+bordered {
+  border: 1px solid lightgray;
+}
+
+shadowed, shadowed-big, header {
+  box-shadow: 0.5px 0.5px 2px #888888f0;
+}
+
+shadowed-big, header {
+  box-shadow: 0px 2px 10px;
+}
+
+label {
+  font-weight: bold;
+  font-size: smaller;
+  display: block;
+}
+
+input, textarea, button {
+  background-color: whitesmoke;
+  border-radius: 4px;
+  border-width: 1px;
+  margin: 3px;
+}
+
+@keyframes blur-animation {
+  from {
+    filter: blur(0px);
+  }
+  to {
+    filter: blur(5px);
+  }
+}
+iframe.import {
+  width: max-content;
+  height: max-content;
+  overflow: hidden;
+}
+
+.hover-blur:hover {
+  filter: blur(5px);
+  animation: blur-animation 2s linear;
+}
+
+.h-section, .h-section-top-menu {
+  border-radius: 0px;
+  margin: -1px;
+  margin-bottom: 10px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.h-section-top-menu {
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0px 0px 0px 0px;
+  z-index: 1;
+}
+
+.discrete-separator, .v-discrete-separator .h-discrete-separator {
+  background-color: white;
+  border: 1px solid lightgray;
+  display: block;
+}
+
+.v-discrete-separator {
+  border-width: 0px 1px;
+  border-radius: 0px;
+}
+
+.h-discrete-separator {
+  border-width: 1px 0px;
+  border-radius: 0px;
+}
+
+.list-of-cards > *, .card {
+  padding: 6px;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 2px 2px 5px lightgray;
+  margin: 6px;
+}
+
+details.dropdown {
+  display: flex;
+  height: auto;
+  border: 1px solid red;
+  overflow: visible;
+}
+details.dropdown summary {
+  border: 1px solid blue;
+  visibility: visible;
+  box-sizing: block;
+  position: relative;
+}
+details.dropdown summary ~ *, details.dropdown summary ~ * * {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid pink;
+}
+details.dropdown summary:hover ~ *, details.dropdown summary ~ *:hover {
+  visibility: visible;
+  display: block;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  padding: 10px;
+  align-items: center;
+  border: 10px solid salmon;
+  border-width: 0px 0px 10px 0px;
+  background-color: white;
+}
+
+#calculadera div {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  box-sizing: border-box;
+  padding: 30px 10px;
+  margin-bottom: 5px;
+}
+#calculadera div label {
+  display: inline-flex;
+}
+#calculadera div input::after {
+  display: block;
+  content: " ";
+}
+
+.card {
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-top: 5px;
+}
+
+/*# sourceMappingURL=exercicio2.css.map */

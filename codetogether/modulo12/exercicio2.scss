@@ -1,0 +1,43 @@
+@use '../../web-libs/css-toolkit/align.scss';
+@use '../../web-libs/css-toolkit/simple-base.scss';
+@use '../../web-libs/css-toolkit/containers.scss';
+html{
+  }
+body{
+  background-color: whitesmoke;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  padding: 10px;
+  align-items: center;
+  border: 10px solid salmon;
+  border-width: 0px 0px 10px 0px; 
+  background-color: white;
+  @extend shadowed-big ;
+
+}
+#calculadera div{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  box-sizing: border-box; 
+  padding: 30px 10px;
+  margin-bottom: 5px;
+
+  & label {
+    display: inline-flex; 
+  }
+  & input::after {
+    display: block;
+    content: ' ';
+  }
+}
+.card{
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-top: 5px;
+}

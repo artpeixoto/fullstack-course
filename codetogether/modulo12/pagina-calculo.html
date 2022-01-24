@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title> Calculadera ismarty </title>
+    <meta lang="pt-br">
+    <meta charset="UTF-8">
+    <meta 
+      name="viewport"
+      content="width=devide-width,initial-scale=1.0">
+
+    <script href="./exercicio2.js">
+      function checarValor(_this, entrada){
+      console.log("checarValor foi chamado.")
+      console.log(entrada);
+      console.log(_this);
+      _this.onfocusout = () => {_this.style.border_color = "red";};
+      };
+
+    </script>
+    <link
+      rel="stylesheet"
+      href="exercicio2.css">
+  </head>
+
+  <body
+    class="v-falign">
+    <header
+      class="h-section-top-menu">
+      <h1>
+        Calculadera <i>ismarty</i>
+      </h1>
+    </header>
+    <main>
+      
+      <section
+        id="calculadera"
+        class="
+          v-discrete-separator
+          v-falign
+          card">
+          <p>Basta entrar com os numeros nessas linhas ai e <i>SENTIR A MAGIA</i></p>
+          <div
+           class="h-discrete-separator">
+            <label>
+              Operando 1: 
+            </label>
+            <input
+              id="op1"
+              oninput="checarValor(this, this.value)"
+              type="text">
+            </input>
+            <label>
+              Operando 2:
+            </label>
+            <input
+              type="text">
+            </input>
+            <label>
+              Operando 3:
+            </label>
+            <input
+              type="text">
+            </input>
+          </div>
+          <button
+            onclick="fazerSoma"
+            >
+            calcule!
+        </button>
+      </section>
+    </main> 
+  </body>
+</html>

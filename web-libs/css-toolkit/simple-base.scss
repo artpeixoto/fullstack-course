@@ -8,13 +8,14 @@ html * {
   color:            #222222;
   border-radius:    2px;
 }
-bordered {
+
+.bordered {
   border:           1px solid lightgray;
 }
-shadowed{
+.shadowed{
   box-shadow:       0.5px 0.5px 2px #888888f0;
 }
-shadowed-big{
+.shadowed-big{
   @extend shadowed;
   box-shadow: 0px 2px 10px; 
 }
@@ -32,7 +33,7 @@ input, textarea, button {
 }
 
 @keyframes blur-animation {
-  from  {filter: none;}
+  from  {filter: blur(0px);}
   to    {filter: blur(5px); }
   }
 
@@ -43,14 +44,8 @@ iframe.import{
 } 
 
 .hover-blur{
-  animation-name:       blur-animation;
-  animation-duration:   2s;
-  animation-direction:  reverse;
-  filter:               blur(5px);
   }
 .hover-blur:hover{
-  animation-name:       blur-animation;
-  animation-duration:   2s;
-  animation-direction:  normal; 
-  filter:               none;
+  filter: blur(5px);
+  animation: blur-animation 2s linear;
   }
