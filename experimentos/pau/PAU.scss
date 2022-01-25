@@ -1,0 +1,114 @@
+@mixin align-flex-h{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+   
+}
+@mixin align-flex-v{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+html *{
+  font-family:        sans-serif;
+  box-sizing:         content-box;
+  color:              inherit;
+  background-color:   inherit;
+}
+html{
+  color:rgba(22, 22, 22, 0.8);
+}
+@mixin ignore-padding
+{}
+
+.align-flex-h{
+  display: flex;
+  flex-direction: row;
+}
+.align-flex-v{
+  display: flex;
+  flex-direction: column;
+}
+.card{
+  padding: 0px;
+  margin: 6px;
+
+  height: auto;
+  width:  max-content;
+  background: linear-gradient(to bottom right, rgb(248, 248, 248),rgb(233, 233, 233) );
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(10, 10, 10, 0.2);
+  box-sizing: content-box;
+  border: 1px solid rgba(120, 120, 120, 0.3);
+  div.card-header{
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 20px;
+    color:rgba(10, 10, 50, 0.8);
+    > * {
+      box-sizing: border-box;
+    }
+
+    h1, h2, h3, h4, h5 {
+      padding: 0px;
+      margin: 0px;
+    }
+    
+    .h-subtitle{
+      font-size:  small;
+      opacity:    0.6;
+      font-weight: thinner;
+    }
+  } 
+}
+var{
+        font-weight: bold;
+      }
+.icon {
+  height: 4px;
+  width: 12px;
+  display: inline;
+  border-radius: 8px;
+  background-color: gray;
+  opacity: 1.0;
+  vertical-align: middle;
+  margin: 0px; 
+}
+
+
+table{
+  padding: 0px;
+  margin: 0px;
+  thead{
+   tr{
+      color: rgba(0.2, 0.5, 0.6, 0.6);
+      font-weight: bold;
+      font-size: x-small;
+      text-transform: uppercase;
+      }
+  }
+  border-collapse: collapse; 
+  margin: 0px;
+  tbody {
+
+    
+    tr{
+      td::before{
+        @extend .icon;
+        
+      }
+      td{
+
+        font-size: 0.8em;
+        flex-grow: 10; 
+        border-color:rgba(32, 32, 32, 0.15);
+        border-width: 1px 0px 0px 0px;
+        border-style: solid;
+        font-size: smaller;
+        padding: 10px;
+        border-collapse: collapse;
+        }
+      }
+    }
+  }
