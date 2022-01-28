@@ -11818,4 +11818,8 @@ form * {
   padding: 10px;
 }
 
+frame.import {
+  border: none;
+}
+
 /*# sourceMappingURL=custom.css.map */
