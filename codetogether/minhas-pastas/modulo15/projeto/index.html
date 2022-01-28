@@ -4,31 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./style/custom.css">
     <title>Document</title>
 </head>
 <body>
-
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
+        <div class="container
+        shadow
+        title">
+            <div 
+                id="main-h-section" 
+                class="row">
+
+                <div class="col-ld-4 col-md-6 ">
                     <h1>Logo</h1>
                 </div>
-                <div class="col">
-                    <ul class="nav justify-content-end">
+                <div class="col-ld-8 col-md-6 justify-content-end">
+                    <ul class="nav ">
                         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
                     </ul>
+
                 </div>
             </div>
+            <div 
+                id="crumbs">
+                <nav
+                class="breadcrumbs">
+                    carousel-item-prev
+                </nav>
+
+            </div>
+
         </div>
     </header>
     
-    <section id="sobre">
+    <section 
+        class="card"
+        id="sobre">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
@@ -71,25 +87,36 @@
                     </div>
 
                     <div class="card">
-                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <img 
+                            src="./images/eric-andre.jpg"
+                            alt="Imagem Exemplo" 
+                            class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" href="#produto-3">ver produto</a>
+                            <h5 
+                              class="card-title">
+                              The Eric Andre Show!
+                            </h5>
+                            <p 
+                              class="card-text">
+                              Ladies and Gentleman, it's the new Eric Andre Show!
+                            </p>
+                            <a 
+                              class="btn btn-primary" 
+                              href="#produto-3">
+                              ver produto
+                            </a>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
 
     </section>
 
-
     <section id="contato">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12 overflow-scroll">
                     <h2>Contato</h2>
                     <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
                 </div>
