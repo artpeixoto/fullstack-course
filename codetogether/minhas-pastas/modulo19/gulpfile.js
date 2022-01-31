@@ -13,13 +13,13 @@ function sendCssIGuess(cb){
         .pipe(  gulpRename( {suffix: '.min'}  ) )
         .pipe(  gulp.dest(  './dist/css'  ) )
     );
-}
+  }
 
 function tarefasJs(cb) {
   return (gulp 
               .src(importSource + '/**/*.js' )
               .pipe(gulpCat('libs.js'))
               .pipe(gulp.dest('./dist/js/')))
-}
+  }
 exports.scripts = tarefasJs;
 exports.styles  = sendCssIGuess;

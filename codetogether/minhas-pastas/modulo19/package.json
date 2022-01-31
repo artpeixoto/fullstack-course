@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepack": "gulp styles && gulp scripts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,7 +15,9 @@
     "gulp-cli": "^2.3.0",
     "gulp-concat": "2.6.1",
     "gulp-cssmin": "^0.2.0",
+    "gulp-image": "^6.3.1",
     "gulp-rename": "^2.0.0",
+    "gulp-strip-comments": "^2.5.2",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0"
   },
