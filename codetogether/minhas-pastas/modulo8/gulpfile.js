@@ -67,4 +67,3 @@ module.exports.watchHtml =    watchHtml;
 module.exports.watchStyles =  watchStyles //watching command is a superset of the build command. The difference being quite obvious you silly goof
 module.exports.build =        gulp.parallel( buildHtml, buildStyles);
 module.exports.watch =        gulp.series(module.exports.build, gulp.parallel( watchHtml, watchStyles));
-module.exports.debug  =       gulp.parallel( module.exports.watch, browserSync. )
