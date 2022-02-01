@@ -1,0 +1,10 @@
+html * {
+  background-color: inherit;
+  color: inherit;
+  box-sizing: content-box;
+}
+
+body {
+  width: 100vw;
+  color: white;
+}

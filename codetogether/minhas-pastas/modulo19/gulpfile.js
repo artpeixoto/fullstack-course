@@ -17,12 +17,12 @@ function sendCssIGuess(cb){
     return cb();
   }
 
-function tarefasJs(cb) {
+gulp.task('dist-styles', (cb) => {
   return (gulp 
               .src(importSource + '/**/*.js' )
               .pipe(gulpCat('libs.js'))
               .pipe(gulp.dest('./dist/js/')))
-  }
+  });
 
 gulp.task('serve', (cb) => {
   pastaDeInteresse = "./src";
