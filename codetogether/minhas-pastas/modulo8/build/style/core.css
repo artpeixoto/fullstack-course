@@ -11120,14 +11120,3 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html * {
-  background-color: inherit;
-  color: inherit;
-  font-family: "Inter";
-}
-
-body, body > * {
-  width: 100vw;
-  margin: 0px;
-  padding: 0px;
-}

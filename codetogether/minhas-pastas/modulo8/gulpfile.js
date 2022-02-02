@@ -5,6 +5,7 @@ const os =          require('os');
 const path =        require('path')
 const htmlImport =  require('gulp-html-import');
 const httpServer =  require('http-server');
+const Json =        JSON;
 
 const p = {
   //sources are the things i manually code that end up being in the final result
@@ -27,43 +28,72 @@ const p = {
   }  
 }
 
-const sourceDir = p.sources._path;
-const styleSourceDir = path.join(sourceDir,  p.sources.styles._path);
-const styleBuildDir  = path.join(p.build._path, "style");
+const sourceDir = './src'
+const buildDir  = './build'
+const stylesSourceDir = path.join(sourceDir,      'style');
+const styleBuildDir  = path.join(buildDir,   "style");
+const htmlSourceDir  =  sourceDir;
+const htmlSourceComponentsDir = path.join(htmlSourceDir, "html/")
+const htmlSourceCompPatt = htmlSourceComponentsDir + "*.html"
+
+
+
+patterns = {
+  style: path.join(stylesSourceDir, "**.scss")
+  , html: path.join(htmlSourceDir, "*.html")
+  };
+
 
 function buildHtml(cb){
-  return( 
-    gulp.src("./src/**/*.html")
-        .pipe(htmlImport("src/html/"))
-        .pipe(gulp.dest("./build"))
-    )
+  srcPattern = patterns.html;
+  destDir    = "./build/"
+  
+  console.log(`Building contents:\t${srcPattern} ->\t${destDir}\n...`)
+  
+  gulp.src(srcPattern)
+      .pipe(htmlImport(htmlSourceComponentsDir))
+      .pipe(gulp.dest(destDir))
   }
+
 
 function buildStyles(cb) {
-  return (
-      gulp.src( "./src/style/scss/**/*.scss")
-      .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest("./build/style/")));
+  srcPattern = patterns.style;
+  destDir    = "./build/style/"
+  
+  console.log(`Building styles:\t${srcPattern} ->\t${destDir}`)
+  
+  gulp.src( patterns.style ) 
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest("./build/style/"));
   }
 
-function watchHtml(cb){
-    console.log(`watching HTML files from ./src/**/*.html -> ./build`)
-    return(
-      gulp.watch("./src/*.html").on("change", buildHtml)
-    )
-  }
-function watchStyles(cb){
-  console.log(`watching sass files from ./src/style/scss/**/*.scss -> ./build/style/`)
-  return (gulp.watch(styleSourceDir).on("change", buildStyles));
-  }
-function startDebugServer(cb){
-  console.log('starting debug Server')
-  return gulp.pipe(httpServer());
+
+function watchSource() {
+  watched = {
+    style: [patterns.style]
+    , html: [patterns.html, htmlSourceCompPatt]
+  } 
+  console.log(`Watching:\n\t${Json.stringify(watched)}`);
+  watchers = 
+    { style: gulp.watch(watched.style)
+    , html:  gulp.watch(watched.html) }
+
+  watchers.style.on("change", (path, stats) => {
+    console.log(`detected the changes in the file: ${path} ${Json.stringify(stats)}`)
+    buildStyles();
+  });
+
+  watchers.html.on("change", (path, stats) => {
+    console.log(`detected the changes in the file: ${path} ${Json.stringify(stats)}`)
+    buildHtml();
+  });
 }
 
+function startDebugServer(cb){
+  console.log('starting debug Server')
+  gulp.pipe(httpServer());
+}
+module.exports.watch =        watchSource;
 module.exports.buildStyles =  buildStyles
 module.exports.buildHtml =    buildHtml
-module.exports.watchHtml =    watchHtml;
-module.exports.watchStyles =  watchStyles //watching command is a superset of the build command. The difference being quite obvious you silly goof
-module.exports.build =        gulp.parallel( buildHtml, buildStyles);
-module.exports.watch =        gulp.series(module.exports.build, gulp.parallel( watchHtml, watchStyles));
+module.exports.build =        gulp.series( buildHtml, buildStyles);

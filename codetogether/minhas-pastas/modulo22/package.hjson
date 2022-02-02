@@ -1,0 +1,22 @@
+{
+  "name": "modulo22",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artpeixoto/modulo22"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
