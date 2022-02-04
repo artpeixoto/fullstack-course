@@ -1,20 +1,22 @@
 nav {
-  list-style: none;
   list-style-type: none;
   background-color: $gray-300;
   padding: 20px;
-  details {
-    background-color: $blue-100;
-    box-sizing: border-box;
-    height: initial;
-    summary {
-      list-style: none;
+  ul{
+    box-sizing: content-box;
+    li{
+      box-sizing: border-box;
+      list-style: none; 
+      details {
+        > * {
+          position: static;
+          display: block;
+        }
+        summary {
+          list-style: none;
+          font-weight: bolder;
+          } 
+        }
+      }
     }
   }
-  
-  details[open]{
-    min-height: fit-content; 
-    transition: height 200ms ease-in-out;
-
-  }
-}

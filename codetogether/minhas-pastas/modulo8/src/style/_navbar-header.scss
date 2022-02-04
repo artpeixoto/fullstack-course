@@ -1,0 +1,22 @@
+
+nav, nav *{
+   box-shadow: none;
+   display: flex;
+   box-sizing: content-box;
+   flex-direction: row;
+   align-self: flex-end;
+   
+   a {
+      box-sizing: border-box;
+      display: inline-flex;
+      width: 200px;
+      height: 100px;
+      align-items: center;
+      vertical-align: middle;
+      transition: background-color 100ms ease-in;
+   }  
+   a:hover{
+      background-color: $gray-400;
+
+   }
+}

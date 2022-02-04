@@ -1,33 +1,19 @@
-@import 'core';
 
-*{
+& {
   @extend .col-12;
   width: 100vw;
   padding: 20px;
   margin: 0px;
-
   box-sizing: border-box;
 
   display: flex;
   flex-direction: row;
+  
   h1, h2, h3, h4, h5 {
     font-weight: 100;
   } 
 
   color: white;
   background-color: black;
-  box-shadow: 4px 4px 16px lightgray;
-  nav#header-nav {
-    ul, ol {
-      button{
-        padding: 10px;
-        flex-grow: 1;
-        height: 100%;
-      }
-      vertical-align: middle;
-      width:100%;
-      display: flex;
-      flex-direction: row;
-      }
-    }
+  
 }

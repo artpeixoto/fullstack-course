@@ -15,7 +15,10 @@ body {
 
    header{
       @import 'header';
-      box-sizing: content-box;
+      @import "navbar-header";
+      box-sizing: border-box;
+      padding: 10px;
+      margin: 0px;
       }
 
    section#body{
@@ -25,9 +28,6 @@ body {
       flex-direction: row;
       main{
          @import 'articles';
-         box-sizing: border-box;
-         padding: 30px;
-         width: 70%; 
          }
 
       aside {
@@ -38,6 +38,7 @@ body {
       }   
    
    footer {
-      @import 'footer'
+
+      @import 'footer';
       }
    }
