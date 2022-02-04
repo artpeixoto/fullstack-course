@@ -1,5 +1,43 @@
 @import 'core';
-
 body {
-}
+   display: flex;
+   flex-direction: column;
 
+   box-sizing: content-box;
+     width: 100%;
+      margin:        0px;
+      padding:       0px;
+      
+   * {
+
+   }
+   //Tres ou quatro paginas para ficarem no menu de navegacao
+
+   header{
+      @import 'header';
+      box-sizing: content-box;
+      }
+
+   section#body{
+      box-sizing: content-box;
+
+      display: flex;
+      flex-direction: row;
+      main{
+         @import 'articles';
+         box-sizing: border-box;
+         padding: 30px;
+         width: 70%; 
+         }
+
+      aside {
+         @import 'navbar';
+         box-sizing: border-box;
+         max-width: 30%;
+         }
+      }   
+   
+   footer {
+      @import 'footer'
+      }
+   }

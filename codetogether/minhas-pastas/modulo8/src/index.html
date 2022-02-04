@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-@import "head.html" 
-<body>
-  <header>
-    @import "header.html"
-  </header> 
-  <main>
-    @import "tea-columns.html"
-  </main>
-  <footer>
+<html>
+   <head>
+      @import "head.html"  
+      <link
+         rel="stylesheet"
+         href="./style/index.css">
 
-  </footer>
-</body>
+   </head>
+
+   <body>
+      <header>
+         @import "header.html"
+      </header>
+      <section id='body'>
+         <aside
+            id="navbar">
+            @import "navbar.html"
+         </aside>
+         <main>
+            @import "articles.html"
+         </main>
+      </section>
+      <footer>
+         @import "footer.html"
+      </footer> 
+  </body>
 
 </html>

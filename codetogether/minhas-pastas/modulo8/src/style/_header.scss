@@ -1,25 +1,23 @@
 @import 'core';
-@import 'color-theme';
 
-body header{
-  @include bordered();
-  @extend .col-6;
+*{
+  @extend .col-12;
   width: 100vw;
+  padding: 20px;
   margin: 0px;
+
   box-sizing: border-box;
 
   display: flex;
   flex-direction: row;
+  h1, h2, h3, h4, h5 {
+    font-weight: 100;
+  } 
 
-  div#main-title{
-    h1{@include title();}
-    vertical-align: middle;
-    padding:        20px;
-    display:        flex;
-    flex-direction: column;
-    flex-grow:      5;
-  }
-  nav {
+  color: white;
+  background-color: black;
+  box-shadow: 4px 4px 16px lightgray;
+  nav#header-nav {
     ul, ol {
       button{
         padding: 10px;

@@ -1,8 +1,0 @@
-@import 'core';
-article{
-  @include card();
-  section{
-    
-    display: block;
-  }
-}

@@ -7,6 +7,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -743,7 +744,7 @@ progress {
   width: 41.66666667%;
 }
 
-.col-6, body header {
+.col-6 {
   flex: 0 0 auto;
   width: 50%;
 }
@@ -773,7 +774,7 @@ progress {
   width: 91.66666667%;
 }
 
-.col-12 {
+.col-12, header {
   flex: 0 0 auto;
   width: 100%;
 }
@@ -11120,45 +11121,50 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html * {
-  background-color: inherit;
-  color: inherit;
-  font-family: "Inter";
-}
-
-body, body > * {
-  width: 100vw;
-  margin: 0px;
+.card {
+  border-radius: 18px;
   padding: 0px;
+  margin: 10px;
+}
+.card .card-title {
+  bakcground-color: #cfe2ff;
 }
 
-body header {
-  border: 4px solid #000;
-  border-radius: 2px;
+html * {
+  color: inherit;
+  background-color: inherit;
+  font-family: "Josefin Sans";
+}
+
+html {
+  background-color: #f8f9fa;
+  color: #1a1a1a;
+}
+
+body {
+  width: 100% !important;
+}
+
+header {
   width: 100vw;
+  padding: 20px;
   margin: 0px;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  color: white;
+  background-color: black;
 }
-body header div#main-title {
-  vertical-align: middle;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 5;
+header h1, header .h1, header h2, header .h2, header h3, header .h3, header h4, header .h4, header h5, header .h5 {
+  font-weight: 100;
 }
-body header div#main-title h1, body header div#main-title .h1 {
-  font-weight: 1000;
-  text-transform: uppercase;
-}
-body header nav ul, body header nav ol {
+header nav ul, header nav ol {
   vertical-align: middle;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-body header nav ul button, body header nav ol button {
+header nav ul button, header nav ol button {
   padding: 10px;
   flex-grow: 1;
   height: 100%;
