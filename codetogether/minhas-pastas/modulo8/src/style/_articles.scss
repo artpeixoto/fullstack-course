@@ -1,10 +1,9 @@
-*{
+&{
     
    h1, h2, h3, h4{
       position: relative;
       left: -10px;
    }
-   @include shadowed();
    box-sizing: border-box;
    background-color: whitesmoke;
    padding: 20px;

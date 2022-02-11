@@ -1,0 +1,44 @@
+@import "core";
+@import 'index.scss';
+
+#cool-table {
+  display:    table;
+  overflow-x: scroll;
+  box-sizing: border-box; 
+  .col{
+    box-sizing: border-box;
+    flex-direction: flex;
+    align-items: center;
+    min-width: 30%;
+    width: 30%;
+    margin: 0px;
+    transition: min-width 100ms linear;
+    transition-property: width min-width;
+    .col-header{
+      @include title();  
+      background-color: inherit;
+      position: sticky;
+      }
+    & > * {
+      justify-items: center;
+      padding: 20px;
+      font-size: 0.8em;
+      padding-bottom: 40px;
+      }
+    &#verde{
+      background-color: $green-200;
+    }
+    &#roibus{
+      background-color: $blue-200;
+    }
+    &#vermelho{
+      background-color: $red-200;
+    }
+  }
+  .col:hover ~ .col{
+    width: 30%;
+  }
+  .col:hover {
+    min-width: 80% !important;
+  }
+} 

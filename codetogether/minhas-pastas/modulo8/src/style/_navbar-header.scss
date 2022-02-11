@@ -5,18 +5,31 @@ nav, nav *{
    box-sizing: content-box;
    flex-direction: row;
    align-self: flex-end;
-   
-   a {
+
+   a, details {
       box-sizing: border-box;
-      display: inline-flex;
+      display: block;
       width: 200px;
       height: 100px;
-      align-items: center;
-      vertical-align: middle;
+      vertical-align: bottom;
       transition: background-color 100ms ease-in;
-   }  
-   a:hover{
+   & :hover{
       background-color: $gray-400;
+      color: $fg-color-2; 
+   }
 
+ }  
+
+     details{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      &>*{
+         position:absolute;
+         
+      }
+      summary{
+         position:relative;
+      }
    }
 }

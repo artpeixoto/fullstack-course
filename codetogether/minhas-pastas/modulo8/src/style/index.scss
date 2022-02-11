@@ -2,8 +2,10 @@
 body {
    display: flex;
    flex-direction: column;
-
+   background-color: $bg-color-3;
+   color:            $fg-color-2;
    box-sizing: content-box;
+
      width: 100%;
       margin:        0px;
       padding:       0px;
@@ -14,6 +16,7 @@ body {
    //Tres ou quatro paginas para ficarem no menu de navegacao
 
    header{
+      
       @import 'header';
       @import "navbar-header";
       box-sizing: border-box;
@@ -28,6 +31,7 @@ body {
       flex-direction: row;
       main{
          @import 'articles';
+         width: 70%;
          }
 
       aside {
@@ -38,7 +42,37 @@ body {
       }   
    
    footer {
-
       @import 'footer';
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+
+      align-content: center;
+      div{
+         flex-grow: 2;
+         nav{
+
+            align-self: flex-start;
+            display: flex;
+            flex-direction: row;
+            a{
+               @extend .card;
+               vertical-align: middle;
+               border: 1px solid lightgray;
+               box-shadow: 6px 6px 0px $gray-500;
+               background-color: $gray-300;
+               display: flex;
+               padding: 10px;
+               width: max-content;
+               border-radius: 50%;
+               overflow: hidden;
+               border: 1px solid $gray-600;
+               margin: 6px;
+               img{
+                 max-height:48px;
+                 max-width: 48px; 
+               } 
+            }
+         }}
       }
    }

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import 'color-theme';
+@import 'my-tools';
+
+$impact-font:     'Impact';
+$futura-font:     'Josefin Sans';
+$inter-font:      'Inter';
+
+$mono-font:       $futura-font;
+$sans-serif-font: $inter-font;
+$title-font:      $inter-font;
+
+html *{
+  background-color: inherit;
+  color: inherit;
+  font-family: $sans-serif-font;
+  }
+body, body > *{
+  width: 100vw;
+  margin: 0px;
+  padding: 0px; 
+}

@@ -4408,7 +4408,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.card {
+.card, body footer div nav a {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -4419,26 +4419,27 @@ textarea.form-control-lg {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
-.card > hr {
+.card > hr, body footer div nav a > hr {
   margin-right: 0;
   margin-left: 0;
 }
-.card > .list-group {
+.card > .list-group, body footer div nav a > .list-group {
   border-top: inherit;
   border-bottom: inherit;
 }
-.card > .list-group:first-child {
+.card > .list-group:first-child, body footer div nav a > .list-group:first-child {
   border-top-width: 0;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
-.card > .list-group:last-child {
+.card > .list-group:last-child, body footer div nav a > .list-group:last-child {
   border-bottom-width: 0;
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
-.card > .card-header + .list-group,
-.card > .list-group + .card-footer {
+.card > .card-header + .list-group, body footer div nav a > .card-header + .list-group,
+.card > .list-group + .card-footer,
+body footer div nav a > .list-group + .card-footer {
   border-top: 0;
 }
 
@@ -4523,7 +4524,7 @@ textarea.form-control-lg {
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
-.card-group > .card {
+.card-group > .card, body footer div nav .card-group > a {
   margin-bottom: 0.75rem;
 }
 @media (min-width: 576px) {
@@ -4531,36 +4532,40 @@ textarea.form-control-lg {
     display: flex;
     flex-flow: row wrap;
   }
-  .card-group > .card {
+  .card-group > .card, body footer div nav .card-group > a {
     flex: 1 0 0%;
     margin-bottom: 0;
   }
-  .card-group > .card + .card {
+  .card-group > .card + .card, body footer div nav .card-group > a + .card, body footer div nav .card-group > .card + a, body footer div nav .card-group > a + a {
     margin-left: 0;
     border-left: 0;
   }
-  .card-group > .card:not(:last-child) {
+  .card-group > .card:not(:last-child), body footer div nav .card-group > a:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-top,
-.card-group > .card:not(:last-child) .card-header {
+  .card-group > .card:not(:last-child) .card-img-top, body footer div nav .card-group > a:not(:last-child) .card-img-top,
+.card-group > .card:not(:last-child) .card-header,
+body footer div nav .card-group > a:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-bottom,
-.card-group > .card:not(:last-child) .card-footer {
+  .card-group > .card:not(:last-child) .card-img-bottom, body footer div nav .card-group > a:not(:last-child) .card-img-bottom,
+.card-group > .card:not(:last-child) .card-footer,
+body footer div nav .card-group > a:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:first-child) {
+  .card-group > .card:not(:first-child), body footer div nav .card-group > a:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-top,
-.card-group > .card:not(:first-child) .card-header {
+  .card-group > .card:not(:first-child) .card-img-top, body footer div nav .card-group > a:not(:first-child) .card-img-top,
+.card-group > .card:not(:first-child) .card-header,
+body footer div nav .card-group > a:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-bottom,
-.card-group > .card:not(:first-child) .card-footer {
+  .card-group > .card:not(:first-child) .card-img-bottom, body footer div nav .card-group > a:not(:first-child) .card-img-bottom,
+.card-group > .card:not(:first-child) .card-footer,
+body footer div nav .card-group > a:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
 }
@@ -11121,11 +11126,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.card {
+.card, body footer div nav a {
   border-radius: 18px;
   padding: 0px;
 }
-.card .card-title {
+.card .card-title, body footer div nav a .card-title {
   background-color: #495057;
   color: white;
   font-size: 1.4em;
@@ -11140,8 +11145,8 @@ html * {
 }
 
 html {
-  background-color: #f8f9fa;
-  color: #1a1a1a;
+  background-color: rgba(13, 0, 38, 0.864);
+  color: rgba(255, 255, 255, 0.905);
 }
 
 body {
@@ -11151,6 +11156,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  background-color: #ddfff8;
+  color: #ff0044;
   box-sizing: content-box;
   width: 100%;
   margin: 0px;
@@ -11181,25 +11188,38 @@ body header nav, body header nav * {
   flex-direction: row;
   align-self: flex-end;
 }
-body header nav a, body header nav * a {
+body header nav a, body header nav details, body header nav * a, body header nav * details {
   box-sizing: border-box;
-  display: inline-flex;
+  display: block;
   width: 200px;
   height: 100px;
-  align-items: center;
-  vertical-align: middle;
+  vertical-align: bottom;
   transition: background-color 100ms ease-in;
 }
-body header nav a:hover, body header nav * a:hover {
+body header nav a :hover, body header nav details :hover, body header nav * a :hover, body header nav * details :hover {
   background-color: #ced4da;
+  color: #ff0044;
+}
+body header nav details, body header nav * details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+body header nav details > *, body header nav * details > * {
+  position: absolute;
+}
+body header nav details summary, body header nav * details summary {
+  position: relative;
 }
 body section#body {
   box-sizing: content-box;
   display: flex;
   flex-direction: row;
 }
-body section#body main * {
-  box-shadow: 2px 2px 10px 0px lightgray;
+body section#body main {
+  width: 70%;
+}
+body section#body main {
   box-sizing: border-box;
   background-color: whitesmoke;
   padding: 20px;
@@ -11207,7 +11227,7 @@ body section#body main * {
   align-self: center;
   text-align: justify;
 }
-body section#body main * h1, body section#body main * .h1, body section#body main * h2, body section#body main * .h2, body section#body main * h3, body section#body main * .h3, body section#body main * h4, body section#body main * .h4 {
+body section#body main h1, body section#body main .h1, body section#body main h2, body section#body main .h2, body section#body main h3, body section#body main .h3, body section#body main h4, body section#body main .h4 {
   position: relative;
   left: -10px;
 }
@@ -11235,6 +11255,39 @@ body section#body aside nav ul li details summary {
   list-style: none;
   font-weight: bolder;
 }
-body footer * {
+body footer {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+body footer {
+  display: flex;
+  justify-content: center;
   background-color: #ced4da;
+}
+body footer div {
+  flex-grow: 2;
+}
+body footer div nav {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+body footer div nav a {
+  vertical-align: middle;
+  border: 1px solid lightgray;
+  box-shadow: 6px 6px 0px #adb5bd;
+  background-color: #dee2e6;
+  display: flex;
+  padding: 10px;
+  width: max-content;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #6c757d;
+  margin: 6px;
+}
+body footer div nav a img {
+  max-height: 48px;
+  max-width: 48px;
 }

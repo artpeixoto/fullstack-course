@@ -1,0 +1,35 @@
+.card {
+   @extend .cool-show;
+   padding: 0px;
+   border: 1px solid lightgray;
+   border-radius: 16px;
+   box-shadow: 2px 2px 10px lightgray;
+   background-color: linear-gradient(to right bottom, white, lightgray); 
+}
+.align-flex{
+   display: flex;
+
+}
+.align-flex-v{
+   @extend .align-flex;
+   flex-direction: column;
+   height: 100%;
+}
+.align-flex-h{
+   @extend .align-flex;
+   flex-direction: row;
+   width: 100%;
+}
+@keyframes cool-showup{
+   from{    
+         position: relative;
+         left: -20px;
+      }
+   to{   left: 0px;    
+         position: static;}
+}
+
+
+.cool-show{
+   animation: cool-showup 300ms ease-in;
+}
