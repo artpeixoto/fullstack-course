@@ -20,7 +20,20 @@
    flex-direction: row;
    width: 100%;
 }
-@keyframes cool-showup{
+@keyframes cool-showup-l{
+   from{    
+      opacity: 0.4;
+      left: 20px;
+      position: relative;
+      }
+   to{   
+      left: 0px;    
+      position: static;
+      }
+}
+
+
+@keyframes cool-showup-r{
    from{    
          position: relative;
          left: -20px;
